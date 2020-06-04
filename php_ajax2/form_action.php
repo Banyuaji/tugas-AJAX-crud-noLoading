@@ -10,7 +10,7 @@
     $tanggal_masuk = stripslashes(strip_tags(htmlspecialchars($_POST['tanggal_masuk'], ENT_QUOTES)));
 
     if ($id=="") {
-        $query = "INSERT INTO `tbl_siswa_search` VALUES(?, ?, ?, ?, ?)";
+        $query = "INSERT INTO `tbl_siswa_search` (`nama_siswa`, `alamat`, `jurusan`, `jenis_kelamin`, `tgl_masuk`) VALUES(?, ?, ?, ?, ?)";
         $prepare1 = $db1->prepare($query);
         $prepare1->bind_param("sssss", $nama_siswa, $alamat, $jurusan, $jenkel, $tanggal_masuk);
         $prepare1->execute();

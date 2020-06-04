@@ -35,7 +35,6 @@
 
         .text-center a {
             text-decoration: none;
-            color: white;
         }
     </style>
     <title>CRUD no loading</title>
@@ -103,7 +102,7 @@
         <hr>
         <div class="data mb-5"></div>
     </div>
-    <div class="text-center">&copy;Copyright |
+    <div class="text-center text-primary">&copy;Copyright |
         <a href="https://smktarunabhakti.net/">Starbhak Soft</a>
     </div>
 </body>
